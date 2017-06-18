@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>SYNTASK v.1.0</title>
     <link href="https://fonts.googleapis.com/css?family=Jura:300,500,700|Orbitron:500,900&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <section class="header container-fluid">
         <nav class="navbar row">
-          <div class="navbar__logo col-sm-4">
-            <h1 class="navbar__logo-title">SYNTASK v.1.0</h1>
-            <p class="nabar__logo-subtitle">Personal Task Synchronization System</p>
-          </div>
+            <div class="navbar__logo col-sm-4">
+                <h1 class="navbar__logo-title">SYNTASK v.1.0</h1>
+                <p class="nabar__logo-subtitle">Personal Task Synchronization System</p>
+            </div>
         </nav>
     </section>
     <section class="main container-fluid">
-      <div class="row">
-        <div class="panel panel--left col-3">
-          <div class="row panel__title">
-            <h3 class="information">
-              This is your Personal Information Panel.
-            </h3>
-          </div>
-          <div class="row panel__menu">
-            <!-- add task -->
-            <div class="panel__menu-add-task" id="add-task">
-              <h4>Add personal task</h4>
-              <form action="">
-                <label for="task-name" data-hint="Enter the name for the task">Task name</label>
-                <input type="text" name="task-name" id="task-name">
-                <label for="task-description" data-hint="Enter short description of the task">Task description</label>
-                <input type="textarea" name="task-description" value="" id="task-description">
-                <label for="task-duration">Task duration(minutes)</label>
-                <input type="number" name="task-duration" value="25" min="5" max="360" step="5">
-                <button type="button" name="add-task__btn">Add task!</button>
-              </form>
-            </div>
-            <!-- end of add task -->
-          </div>
+        <div class="row">
+            <div class="panel panel--left col-4">
+                <div class="row panel__title">
+                    <h3 class="information">
+                      Personal Information Panel
+                    </h3>
+                </div>
+                <div class="panel__menu">
+                  <!-- menu elements are built as h4 title, and then corresponding div with menu element -->
+                      <!-- add task -->
+                      <h4 class="addtask--title menu__item-title">
+                        Add personal task
+                      </h4>
+                      <div class="addtask--menu__item menu__item">
+                        <form action="">
+                            <label for="task-name" data-hint="Enter the name for the task">Task name</label>
+                            <input type="text" name="task-name" id="task-name">
+                            <label for="task-description" data-hint="Enter short description of the task">Task description</label>
+                            <input type="textarea" name="task-description" value="" id="task-description">
+                            <label for="task-duration">Task duration(minutes)</label>
+                            <input type="number" name="task-duration" value="25" min="5" max="360" step="5">
+                            <button type="button" name="add-task__btn">Add task!</button>
+                        </form>
+                      </div>
+                    <!-- end of add task -->
+                    <!-- pomodoro counter -->
+                    <!-- <div class="panel__menu--pomodoro">
+              as
+            </div> -->
+                    <!-- end of pomodoro counter -->
+                </div>
 
-        </div>
-        <div class="mainscreen col-9">
-            <h3 class="information">
+            </div>
+            <div class="mainscreen col-8">
+                <h3 class="information">
               This is your Personal Virtual Tasking Screen.
             </h3>
+            </div>
         </div>
-      </div>
     </section>
 
-
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
     <!-- Bootstrap CDNs -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+    <script type="text/javascript" src="script/app.js">
+    </script>
+</body>
+
 </html>

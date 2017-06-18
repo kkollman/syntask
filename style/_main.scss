@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,9 +38,4 @@ h3 {
 
 .information {
   color: $greenText;
-}
-
-//panel styles
-.panel {
-  background-color: $mainLighter;
 }

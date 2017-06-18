@@ -8,7 +8,8 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Jura', sans-serif;
@@ -33,9 +34,14 @@ h3 {
   background-color: #23282e; }
 
 .information {
-  color: #00b422; }
+  color: #05d62d; }
 
 .panel {
-  background-color: #555c65; }
+  background-color: #555c65;
+  margin-top: 25px; }
+
+.panel__title {
+  background-color: #23282e;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
