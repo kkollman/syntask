@@ -4,6 +4,9 @@
 .panel {
   background-color: $mainLighter;
   margin-top: 25px;
+  @include backGradient;
+  border: 1px solid $greenText;
+  @include glow;
 }
 
 .panel__title {

@@ -38,7 +38,19 @@ h3 {
 
 .panel {
   background-color: #555c65;
-  margin-top: 25px; }
+  margin-top: 25px;
+  background: #70757a;
+  background: -moz-linear-gradient(top, #70757a 0%, #555c65 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #70757a), color-stop(100%, #555c65));
+  background: -webkit-linear-gradient(top, #70757a 0%, #555c65 100%);
+  background: -o-linear-gradient(top, #70757a 0%, #555c65 100%);
+  background: -ms-linear-gradient(top, #70757a 0%, #555c65 100%);
+  background: linear-gradient(to bottom, #70757a 0%, #555c65 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#70757a', endColorstr='#555c65', GradientType=0 );
+  border: 1px solid #05d62d;
+  -webkit-box-shadow: inset -2px 1px 60px -26px #2bff00;
+  -moz-box-shadow: inset -2px 1px 60px -26px #2bff00;
+  box-shadow: inset -2px 1px 60px -26px #2bff00; }
 
 .panel__title {
   background-color: #23282e;

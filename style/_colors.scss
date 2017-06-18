@@ -4,3 +4,27 @@ $mainDarker: rgb(35, 40, 46);
 $mainText: rgb(163, 163, 163);
 $headerText: white;
 $greenText: rgb(5, 214, 45);
+//light-grey gradient for panels
+@mixin backGradient {
+    background: rgba(112,117,122,1);
+    background: -moz-linear-gradient(top, rgba(112,117,122,1) 0%, rgba(85,92,101,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(112,117,122,1)), color-stop(100%, rgba(85,92,101,1)));
+    background: -webkit-linear-gradient(top, rgba(112,117,122,1) 0%, rgba(85,92,101,1) 100%);
+    background: -o-linear-gradient(top, rgba(112,117,122,1) 0%, rgba(85,92,101,1) 100%);
+    background: -ms-linear-gradient(top, rgba(112,117,122,1) 0%, rgba(85,92,101,1) 100%);
+    background: linear-gradient(to bottom, rgba(112,117,122,1) 0%, rgba(85,92,101,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#70757a', endColorstr='#555c65', GradientType=0 );
+}
+//green inset glow
+@mixin glow {
+  -webkit-box-shadow: inset -2px 1px 60px -26px rgba(43,255,0,1);
+-moz-box-shadow: inset -2px 1px 60px -26px rgba(43,255,0,1);
+box-shadow: inset -2px 1px 60px -26px rgba(43,255,0,1);
+}
+
+//main material design shadow
+@mixin shade {
+  -webkit-box-shadow: 9px 15px 90px -28px rgba(20,20,20,0.8);
+-moz-box-shadow: 9px 15px 90px -28px rgba(20,20,20,0.8);
+box-shadow: 9px 15px 90px -28px rgba(20,20,20,0.8);
+}
